@@ -13,7 +13,7 @@ export const sendEmailSubscription = async (email, nome) => {
 
   const mail = {
     from: "ti@b9sistemas.com.br",
-    to: "rafael13rodrigo@gmail.com",
+    to: String(email),
     subject: `Mensagem do Hackathon`,
     // text: "essa é uma mensagem teste da inscrição do hackathon",
     html: `<body style="margin:0px; padding:0px;" bgcolor="#ffffff">
