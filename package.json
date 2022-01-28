@@ -1,0 +1,26 @@
+{
+  "name": "backend_inscricao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/bin/server.js",
+    "build": "sucrase ./src -d ./build --transforms imports"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "http": "^0.0.1-security",
+    "nodemailer": "^6.7.2",
+    "prisma": "^3.8.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sucrase": "^3.20.3"
+  }
+}

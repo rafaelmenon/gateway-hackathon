@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  pgsql-hackathon:
+    image: postgres:alpine
+    ports:
+      - "5415:5432"
+    container_name: "pgsql-hackathon"
+    restart: always
+    volumes:
+      - ./data-hackathon:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pghackt
+      POSTGRES_PASSWORD: pghacktpghackt
+
+volumes:
+  data-hackathon:

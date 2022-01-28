@@ -1,0 +1,41 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Subscription {
+  id                   Int      @id @default(autoincrement())
+  id_asaas             String?
+  dateCreated          String?
+  name                 String?
+  email                String?
+  company              String?
+  phone                String?
+  mobilePhone          String?
+  address              String?
+  addressNumber        String?
+  complement           String?
+  province             String?
+  postalCode           String?
+  cpfCnpj              String?
+  personType           String?
+  deleted              Boolean  @default(false)
+  additionalEmails     String?
+  externalReference    String?
+  notificationDisabled Boolean  @default(false)
+  observations         String?
+  city                 Int?
+  state                String?
+  country              String?
+  foreignCustomer      Boolean  @default(false)
+  confirmed            Boolean  @default(false)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}

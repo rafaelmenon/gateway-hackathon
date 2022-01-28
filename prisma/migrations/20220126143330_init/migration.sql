@@ -1,0 +1,31 @@
+-- CreateTable
+CREATE TABLE "Subscription" (
+    "id" SERIAL NOT NULL,
+    "id_asaas" TEXT,
+    "dateCreated" TEXT,
+    "name" TEXT,
+    "email" TEXT,
+    "company" TEXT,
+    "phone" TEXT,
+    "mobilePhone" TEXT,
+    "address" TEXT,
+    "addressNumber" TEXT,
+    "complement" TEXT,
+    "province" TEXT,
+    "postalCode" TEXT,
+    "cpfCnpj" TEXT,
+    "personType" TEXT,
+    "deleted" BOOLEAN NOT NULL DEFAULT false,
+    "additionalEmails" TEXT,
+    "externalReference" TEXT,
+    "notificationDisabled" BOOLEAN NOT NULL DEFAULT false,
+    "observations" TEXT,
+    "city" INTEGER,
+    "state" TEXT,
+    "country" TEXT,
+    "foreignCustomer" BOOLEAN NOT NULL DEFAULT false,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "Subscription_pkey" PRIMARY KEY ("id")
+);
