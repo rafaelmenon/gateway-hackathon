@@ -13,9 +13,8 @@ export const sendEmailSubscription = async (email, nome) => {
 
   const mail = {
     from: "ti@b9sistemas.com.br",
-    to: String(email),
+    to: email,
     subject: `Mensagem do Hackathon`,
-    // text: "essa é uma mensagem teste da inscrição do hackathon",
     html: `<body style="margin:0px; padding:0px;" bgcolor="#ffffff">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
       <!-- === BODY SECTION=== --> 
