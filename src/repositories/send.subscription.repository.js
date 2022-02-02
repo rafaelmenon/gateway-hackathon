@@ -1,7 +1,6 @@
 import mailer from "nodemailer";
 
 export const sendEmailSubscription = async (email, nome) => {
-  console.log("email ->>>", email);
   const smtp = mailer.createTransport({
     host: "smtp.titan.email",
     port: 465,
@@ -96,7 +95,6 @@ export const sendEmailSubscription = async (email, nome) => {
       })
       .catch((error) => {
         smtp.close();
-        console.log(error);
         return reject(error);
       });
   });
