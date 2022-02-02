@@ -48,7 +48,7 @@ export const createSubscription = async (data) => {
 
   const paymentLink = createPayment.data.invoiceUrl;
 
-  sendEmailSubscription(createPayment.data.email, createPayment.data.name);
+  sendEmailSubscription(data.email, data.name);
 
   return { paymentLink };
 };
