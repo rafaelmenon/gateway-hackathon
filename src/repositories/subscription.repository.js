@@ -20,7 +20,7 @@ export const createSubscription = async (data) => {
   delete createClientAsaas.data.id;
   delete createClientAsaas.data.object;
 
-  console.log(createClientAsaas);
+  console.log(createClientAsaas.data);
 
   // const client = await prisma.subscription.create({
   //   data: createClientAsaas.data,
