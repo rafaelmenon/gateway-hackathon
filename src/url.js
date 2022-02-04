@@ -2,7 +2,7 @@ import axios from "axios";
 const key = process.env;
 
 const url = axios.create({
-  baseURL: "https://sandbox.asaas.com/api/v3/",
+  baseURL: "https://asaas.com/api/v3/",
 });
 
 url.interceptors.request.use(function (config) {
