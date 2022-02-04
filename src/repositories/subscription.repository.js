@@ -22,9 +22,9 @@ export const createSubscription = async (data) => {
 
   console.log(createClientAsaas);
 
-  const client = await prisma.subscription.create({
-    data: createClientAsaas.data,
-  });
+  // const client = await prisma.subscription.create({
+  //   data: createClientAsaas.data,
+  // });
 
   // const object = {
   //   customer: client.id_asaas,
