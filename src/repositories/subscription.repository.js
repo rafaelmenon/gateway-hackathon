@@ -18,6 +18,7 @@ export const createSubscription = async (data) => {
     data,
     {
       headers: {
+        "Content-Type": "application/json",
         access_token:
           "eb90fc896572b0dc3177062751dc1bd1d95a7a5392145a49e76eb99558136c94",
       },
@@ -58,6 +59,7 @@ export const createSubscription = async (data) => {
     object,
     {
       headers: {
+        "Content-Type": "application/json",
         access_token:
           "eb90fc896572b0dc3177062751dc1bd1d95a7a5392145a49e76eb99558136c94",
       },
