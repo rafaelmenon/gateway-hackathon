@@ -100,7 +100,7 @@ export const listSubscription = async () => {
 export const listByIdSubscription = async (id) => {
   const response = await prisma.subscription.findUnique({
     where: {
-      id: id,
+      id: Number(id),
     },
   });
   return response;
@@ -109,7 +109,7 @@ export const listByIdSubscription = async (id) => {
 export const updateSubscription = async (id, data) => {
   const response = await prisma.subscription.update({
     where: {
-      id: id,
+      id: Number(id),
     },
     data: {
       name: data.name,
@@ -128,7 +128,7 @@ export const updateSubscription = async (id, data) => {
 export const deleteSubscription = async (id) => {
   await prisma.subscription.delete({
     where: {
-      id: id,
+      id: Number(id),
     },
   });
 };
