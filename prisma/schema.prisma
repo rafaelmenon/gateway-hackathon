@@ -31,7 +31,7 @@ model Subscription {
   externalReference    String?
   notificationDisabled Boolean  @default(false)
   observations         String?
-  city                 Int?
+  city                 String?
   state                String?
   country              String?
   foreignCustomer      Boolean  @default(false)
